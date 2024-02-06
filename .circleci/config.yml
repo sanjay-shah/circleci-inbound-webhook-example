@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  say-hello:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      - run: 
+          name: example
+          command: echo "one step"
+
+workflows:
+  say-hello-workflow:
+    jobs:
+      - say-hello
