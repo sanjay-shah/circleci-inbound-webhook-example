@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: example
-          command: echo "one step"
+          name: greeting
+          command: echo "Hello World!"
 
 workflows:
   say-hello-workflow:
